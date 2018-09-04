@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "019579f1-38de-484e-8503-62fbf2087741",
+		"name": "request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api.github.com/search/users?q=tom+followers:%3E1000",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token  0b59656ef3870368a8e5bf3e3435047f51a11fcd"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.github.com/search/users?q=tom+followers:%3E1000",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"users"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "tom+followers:%3E1000"
+						}
+					]
+				},
+				"description": "1 пункт задания"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/repos/octocat/Hello-World/issues/436",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 0b59656ef3870368a8e5bf3e3435047f51a11fcd"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github.symmetra-preview+json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "https://api.github.com/repos/octocat/Hello-World/issues/436",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"octocat",
+						"Hello-World",
+						"issues",
+						"436"
+					]
+				},
+				"description": "issues"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/repos/jScripe/epam/issues",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "token 0b59656ef3870368a8e5bf3e3435047f51a11fcd"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.github.symmetra-preview+json"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Found a bug\",\r\n  \"body\": \"I'm having a problem with this.\",\r\n  \"assignees\": [\r\n    \"jScripe\"\r\n  ],\r\n  \"labels\": [\r\n    \"bug\"\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/jScripe/epam/issues",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"jScripe",
+						"epam",
+						"issues"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
