@@ -113,6 +113,72 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "https://api.github.com/search/users?q=tom",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://api.github.com/search/users?q=tom",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"users"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "tom"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.github.com/repos/jScripe/epam/issues/1/comments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "token   a32e750cb9181e7bc343d45117b8143f6b390583"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"body\": \"ulala\"\n}"
+				},
+				"url": {
+					"raw": "https://api.github.com/repos/jScripe/epam/issues/1/comments",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"repos",
+						"jScripe",
+						"epam",
+						"issues",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
